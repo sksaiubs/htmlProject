@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Job Application Portal by Sk Saiub – Modern hiring platform with professional UI.">
+    <meta name="keywords" content="Job Application Form, Hiring Portal, HTML, CSS, JavaScript">
+    <meta name="author" content="Sk Saiub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Portal | Sk Saiub</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="portal-header">
+    <nav class="portal-nav">
+        <div class="brand">
+            <span class="brand-logo">Careers</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#application">Apply</a></li>
+            <li><a href="#roles">Open Roles</a></li>
+            <li><a href="#process">Hiring Process</a></li>
+            <li><a href="#contact">Support</a></li>
+        </ul>
+    </nav>
+
+    <section class="portal-hero">
+        <h1>Build Your Career With Us</h1>
+        <p>
+            Apply for modern software engineering roles through a clean,
+            structured, and recruiter-friendly hiring portal.
+        </p>
+    </section>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+<!-- ===== APPLICATION SECTION ===== -->
+<section id="application" class="application-section">
+    <h2>Job Application Form</h2>
+
+    <p class="section-intro">
+        Complete the form below to apply for open engineering positions.
+        All applications are reviewed carefully by our hiring team.
+    </p>
+
+    <form class="application-form">
+
+        <!-- Candidate Information -->
+        <fieldset>
+            <legend>Candidate Profile</legend>
+
+            <div class="form-group">
+                <label>Profile Photo</label>
+                <input type="file" accept="image/*">
+                <small>Upload a professional photo (optional)</small>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+91 XXXXX XXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label>Current Location</label>
+                    <input type="text" placeholder="City, Country">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Job Preferences -->
+        <fieldset>
+            <legend>Position Details</legend>
+
+            <div class="form-group">
+                <label>Position Applying For</label>
+                <select required>
+                    <option value="">Select a role</option>
+                    <option>Software Development Engineer</option>
+                    <option>Frontend Engineer</option>
+                    <option>Backend Engineer</option>
+                    <option>Full Stack Developer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Years of Experience</label>
+                <input type="number" placeholder="e.g. 2">
+            </div>
+        </fieldset>
+
+        <!-- Resume -->
+        <fieldset>
+            <legend>Resume & Portfolio</legend>
+
+            <div class="form-group">
+                <label>Upload Resume (PDF)</label>
+                <input type="file" accept=".pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label>Portfolio / GitHub Link</label>
+                <input type="url" placeholder="https://github.com/username">
+            </div>
+        </fieldset>
+
+        <!-- Motivation -->
+        <fieldset>
+            <legend>Why Should We Hire You?</legend>
+
+            <div class="form-group">
+                <textarea rows="5" placeholder="Briefly explain your skills, experience, and motivation..." required></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="form-actions">
+            <button type="submit">Submit Application</button>
+        </div>
+
+    </form>
+</section>
+
+<!-- ===== OPEN ROLES ===== -->
+<section id="roles" class="roles-section">
+    <h2>Current Open Positions</h2>
+
+    <div class="role-cards">
+        <article class="role-card">
+            <h3>Software Development Engineer</h3>
+            <p>Design scalable systems and work on real-world engineering problems.</p>
+        </article>
+
+        <article class="role-card">
+            <h3>Frontend Engineer</h3>
+            <p>Create clean, accessible, and responsive user interfaces.</p>
+        </article>
+
+        <article class="role-card">
+            <h3>Full Stack Developer</h3>
+            <p>Build complete applications using modern frontend and backend stacks.</p>
+        </article>
+    </div>
+</section>
+
+<!-- ===== HIRING PROCESS ===== -->
+<section id="process" class="process-section">
+    <h2>Hiring Process</h2>
+
+    <ol class="process-steps">
+        <li>Application Review</li>
+        <li>Technical Screening</li>
+        <li>Interview Rounds</li>
+        <li>Final Offer</li>
+    </ol>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact-section">
+    <h2>Need Help?</h2>
+    <p>For any questions related to applications, contact our hiring team.</p>
+
+    <a href="mailto:careers@example.com" class="support-link">
+        careers@example.com
+    </a>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Job Application Portal. Designed by Sk Saiub.</p>
+</footer>
+
+<!-- External JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

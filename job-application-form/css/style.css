@@ -1,0 +1,298 @@
+/* ===============================
+   RESET & ROOT VARIABLES
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --accent: #22c55e;
+    --dark: #0f172a;
+    --muted: #64748b;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --radius: 14px;
+    --transition: all 0.3s ease;
+}
+
+/* ===============================
+   BASE STYLES
+=============================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===============================
+   HEADER & NAV
+=============================== */
+.portal-header {
+    background: linear-gradient(135deg, #020617, #1e293b);
+    color: var(--white);
+}
+
+.portal-nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ===============================
+   HERO
+=============================== */
+.portal-hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.portal-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.portal-hero p {
+    color: #cbd5f5;
+    font-size: 1.05rem;
+}
+
+/* ===============================
+   SECTION BASE
+=============================== */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    max-width: 720px;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+}
+
+/* ===============================
+   APPLICATION FORM
+=============================== */
+.application-form {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2.5rem;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: var(--primary);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.3rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid #cbd5f5;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Styled file input */
+input[type="file"] {
+    padding: 0.6rem;
+    background-color: #f1f5f9;
+    border: 2px dashed #cbd5f5;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: var(--primary);
+}
+
+small {
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+/* ===============================
+   FORM ACTION
+=============================== */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form-actions button {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.9rem 2.4rem;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.form-actions button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   ROLES SECTION
+=============================== */
+.role-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.role-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    transition: var(--transition);
+    border-left: 5px solid var(--accent);
+}
+
+.role-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ===============================
+   PROCESS
+=============================== */
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.process-steps li {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary);
+}
+
+/* ===============================
+   CONTACT
+=============================== */
+.contact-section {
+    text-align: center;
+}
+
+.support-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .portal-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .application-form {
+        padding: 2rem;
+    }
+}

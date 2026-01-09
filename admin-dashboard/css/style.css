@@ -1,0 +1,239 @@
+/* ===============================
+   RESET & ROOT VARIABLES
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --accent: #22c55e;
+    --dark: #0f172a;
+    --muted: #64748b;
+    --bg: #f1f5f9;
+    --white: #ffffff;
+    --radius: 14px;
+    --transition: all 0.3s ease;
+}
+
+/* ===============================
+   BASE STYLES
+=============================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.dashboard-header {
+    background: linear-gradient(135deg, #020617, #1e293b);
+    color: var(--white);
+    padding: 1.4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-left img {
+    width: 34px;
+    filter: invert(1);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.header-right img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+/* ===============================
+   LAYOUT
+=============================== */
+.sidebar {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 72px);
+    background: var(--white);
+    padding: 2rem 1.2rem;
+    box-shadow: 6px 0 20px rgba(0,0,0,0.05);
+}
+
+.dashboard-main {
+    margin-left: 220px;
+    padding: 3rem 2.5rem;
+}
+
+/* ===============================
+   SIDEBAR
+=============================== */
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sidebar li {
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sidebar li:hover {
+    background-color: var(--bg);
+}
+
+.sidebar .active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* ===============================
+   STAT CARDS
+=============================== */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.stat-info {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.stat-info.success {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ===============================
+   ACTIVITY
+=============================== */
+.activity-section {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.activity-section h2 {
+    margin-bottom: 1.8rem;
+}
+
+.activity-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.activity-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.8rem;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    margin-left: 220px;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+
+    .dashboard-main,
+    footer {
+        margin-left: 0;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+.dashboard-chart {
+    margin-top: 3rem;
+}
+
+.chart-description {
+    color: var(--muted);
+    margin-bottom: 1.2rem;
+}
+
+.chart-container {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.chart-container img {
+    width: 100%;
+    border-radius: 10px;
+}

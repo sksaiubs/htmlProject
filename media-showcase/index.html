@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Modern Media Showcase by Sk Saiub featuring images, videos, audio, and embedded content.">
+    <meta name="keywords" content="Media Gallery, HTML Project, Images, Videos, Audio, Portfolio">
+    <meta name="author" content="Sk Saiub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Showcase | Sk Saiub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <nav class="navbar">
+        <div class="brand">
+            <img src="assets/icons/media-icon.jpg"style="width: 75px;height: 100px;" alt="Media Icon">
+            <span>Media Showcase</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#embed">Embed</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Modern Media Showcase</h1>
+        <p>
+            A professionally designed media experience showcasing
+            images, video, audio, and external embedded content
+            using clean and semantic HTML.
+        </p>
+    </section>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+<!-- ===== IMAGE GALLERY ===== -->
+<section id="gallery" class="media-section">
+    <h2>Image Gallery</h2>
+    <p class="section-intro">
+        A responsive image gallery displaying high-quality visuals
+        organized with accessibility and clarity in mind.
+    </p>
+
+    <div class="image-grid">
+        <figure>
+            <img src="assets/images/gallery-1.jpg" alt="Gallery Image 1">
+            <figcaption>Creative Visual Concept</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/gallery-2.jpg" alt="Gallery Image 2">
+            <figcaption>Modern Design Aesthetic</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/gallery-3.jpg" alt="Gallery Image 3">
+            <figcaption>Clean Visual Composition</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- ===== VIDEO SECTION ===== -->
+<section id="video" class="media-section">
+    <h2>Video Presentation</h2>
+    <p class="section-intro">
+        This section demonstrates native HTML video support
+        with clean playback controls and responsive layout.
+    </p>
+
+    <video class="demo-video" controls>
+    <source src="assets/videos/demo-video.mp4" type="video/mp4">
+</video>
+</section>
+
+<!-- ===== AUDIO SECTION ===== -->
+<section id="audio" class="media-section">
+    <h2>Audio Experience</h2>
+    <p class="section-intro">
+        Background audio integration showcasing how multimedia
+        content can enhance user experience.
+    </p>
+
+    <audio controls>
+        <source src="assets/audios/background-music.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</section>
+
+<!-- ===== EMBED SECTION ===== -->
+<section id="embed" class="media-section">
+    <h2>Embedded Media</h2>
+    <p class="section-intro">
+        External content can be embedded seamlessly using iframes
+        to extend platform capabilities.
+    </p>
+
+    <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/UB1O30fR-EE"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Media Showcase. Designed by Sk Saiub.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

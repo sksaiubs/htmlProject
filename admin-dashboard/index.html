@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Modern Company Dashboard UI by Sk Saiub – Admin overview interface built with HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="Dashboard UI, Admin Panel, HTML, CSS, JavaScript, Web Application">
+    <meta name="author" content="Sk Saiub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Dashboard | Sk Saiub</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="dashboard-header">
+    <div class="header-left">
+        <img src="assets/icons/dashboard.jpg" alt="Dashboard Icon"style="width: 45px;height: 45px;">
+        <h1>Company Dashboard</h1>
+    </div>
+
+    <div class="header-right">
+        <img src="assets/images/admin-avatar.jpg" style="width: 55px;height: 60px;" alt="Admin Profile">
+        <span>Admin</span>
+    </div>
+</header>
+
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+    <nav>
+        <ul>
+            <li class="active">Overview</li>
+            <li>Analytics</li>
+            <li>Users</li>
+            <li>Projects</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- ================= MAIN ================= -->
+<main class="dashboard-main">
+
+    <section class="dashboard-chart">
+    <h2>System Analytics</h2>
+
+    <p class="chart-description">
+        Overview of recent system activity and performance metrics.
+        This static chart represents dashboard-style data visualization.
+    </p>
+
+    <div class="chart-container">
+        <img src="assets/charts/sample-chart.jpg" 
+             alt="Sample analytics chart showing system performance">
+    </div>
+</section>
+    <!-- ===== OVERVIEW CARDS ===== -->
+    <section class="stats-section">
+        <div class="stat-card">
+            <h3>Total Users</h3>
+            <p class="stat-number">12,450</p>
+            <span class="stat-info">+8% this month</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>Active Projects</h3>
+            <p class="stat-number">86</p>
+            <span class="stat-info">Ongoing</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>Revenue</h3>
+            <p class="stat-number">$248,300</p>
+            <span class="stat-info">Monthly</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>System Status</h3>
+            <p class="stat-number">Stable</p>
+            <span class="stat-info success">All services running</span>
+        </div>
+    </section>
+
+    <!-- ===== ACTIVITY SECTION ===== -->
+    <section class="activity-section">
+        <h2>Recent Activity</h2>
+
+        <ul class="activity-list">
+            <li>
+                <strong>New user registered</strong>
+                <span>5 minutes ago</span>
+            </li>
+            <li>
+                <strong>Project Alpha updated</strong>
+                <span>30 minutes ago</span>
+            </li>
+            <li>
+                <strong>Monthly report generated</strong>
+                <span>2 hours ago</span>
+            </li>
+            <li>
+                <strong>System backup completed</strong>
+                <span>Yesterday</span>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>Company Dashboard Interface. Designed by Sk Saiub.</p>
+</footer>
+
+<!-- External JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Modern E-Commerce Product Showcase UI built with HTML, CSS, and JavaScript">
+    <meta name="keywords" content="E-Commerce UI, Product Page, HTML CSS Project">
+    <meta name="author" content="Sk Saiub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Commerce Product Showcase | Sk Saiub</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="store-header">
+    <nav class="store-nav">
+        <div class="brand">
+            <img src="assets/icons/cart-icon.jpg" alt="Store Logo">
+            <span>ShopSmart</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Premium Tech Products</h1>
+        <p>
+            Discover high-quality gadgets designed to improve productivity,
+            performance, and everyday digital experience.
+        </p>
+    </section>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+<!-- ===== PRODUCTS SECTION ===== -->
+<section id="products" class="products-section">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+            <img src="assets/images/product-1.jpg" alt="Wireless Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₹4,999 <span>₹6,499</span></p>
+            <p class="desc">
+                High-quality noise cancellation headphones with premium sound output.
+            </p>
+            <button>Add to Cart</button>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+            <img src="assets/images/product-2.jpg" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₹3,499 <span>₹4,999</span></p>
+            <p class="desc">
+                Track fitness, health metrics, and notifications with a modern smartwatch.
+            </p>
+            <button>Add to Cart</button>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+            <img src="assets/images/product-3.jpg" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p class="price">₹5,999 <span>₹7,999</span></p>
+            <p class="desc">
+                Mechanical keyboard built for programmers and gamers.
+            </p>
+            <button>Add to Cart</button>
+        </article>
+
+    </div>
+</section>
+
+<!-- ===== VIDEO DEMO ===== -->
+<section id="demo" class="demo-section">
+    <h2>Product Demo</h2>
+
+    <video class="demo-video" controls>
+        <source src="assets/videos/product-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- ===== CART SUMMARY ===== -->
+<section id="cart" class="cart-section">
+    <h2>Cart Summary</h2>
+
+    <div class="cart-box">
+        <p>Total Items: <strong>3</strong></p>
+        <p>Total Price: <strong>₹14,497</strong></p>
+
+        <a href="https://www.amazon.in" target="_blank" class="checkout-link">
+            Proceed to Checkout
+        </a>
+    </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 E-Commerce UI Project. Designed by Sk Saiub.</p>
+</footer>
+
+<!-- External JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

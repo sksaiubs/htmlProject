@@ -1,0 +1,354 @@
+/* ===============================
+   RESET & ROOT VARIABLES
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --secondary: #22c55e;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --card-bg: #ffffff;
+    --radius: 14px;
+    --transition: all 0.3s ease;
+}
+
+/* ===============================
+   BASE STYLES
+=============================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===============================
+   HEADER & NAVBAR
+=============================== */
+.site-header {
+    background: linear-gradient(135deg, #020617, #1e293b);
+    color: #ffffff;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color:aqua;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* GitHub Icon */
+.nav-social img {
+    filter: invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-social img:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4.5rem 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-top: 1rem;
+    color: #cbd5f5;
+}
+
+.hero-subtext {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.hero-actions {
+    margin-top: 2.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.7rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn.primary {
+    background-color: var(--secondary);
+    color: #022c22;
+}
+
+.btn.primary:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn.secondary:hover {
+    background-color: var(--secondary);
+    color: #022c22;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    border: 5px solid var(--secondary);
+}
+
+/* ===============================
+   SECTION BASE
+=============================== */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 5.5rem 2rem;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===============================
+   ABOUT SECTION 
+=============================== */
+.about p {
+    max-width: 720px;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+.about-highlights {
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+.about-highlights li {
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+/* ===============================
+   SKILLS SECTION 
+=============================== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.6rem;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+    position: relative;
+    transition: var(--transition);
+}
+
+.skill-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: var(--radius) 0 0 var(--radius);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ===============================
+   PROJECTS SECTION 
+=============================== */
+.project-card {
+    background-color: var(--card-bg);
+    padding: 2.3rem;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+    margin-bottom: 2.2rem;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(34,197,94,0.18);
+}
+
+.project-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    background-color: #ecfdf5;
+    color: #047857;
+    font-weight: 600;
+}
+
+/* ===============================
+   CONTACT SECTION 
+=============================== */
+.contact form {
+    max-width: 520px;
+    display: grid;
+    gap: 1.1rem;
+    margin-top: 2rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid #cbd5f5;
+    font-family: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.contact button {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.contact-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
